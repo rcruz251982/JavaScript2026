@@ -66,15 +66,15 @@ function limpiarTodo() {
 
   document.getElementById('nombre').value = ''
   document.getElementById('saludo').innerHTML = ''
-    document.getElementById('saludo').style.display = 'none'
-      document.getElementById('pantalla').value = ''
-        document.getElementById('comentario').innerHTML = ''
+  document.getElementById('saludo').style.display = 'none'
+  document.getElementById('pantalla').value = ''
+  document.getElementById('comentario').innerHTML = ''
 
-        //document.body.classList.Remove('fiesta')
+  //document.body.classList.remove('fiesta')
 
 
 
-    
+
 
 
 
