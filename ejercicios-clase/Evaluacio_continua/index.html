@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtakuVault - Tu Startup de Anime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">Otaku<span>TV</span></div>
+        <div class="user_status">
+            <button class="btn-estado">Estado: Invitado </button>
+            <button class="btn-acceso">Acceder</button>
+
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero_seccion">
+
+
+            <div class="hero_nueva_temporada">
+                <img src="img/hero-image.png" alt="Nueva Temporada" class="hero_nueva_temporada-img">
+
+
+            </div>
+
+            <div class="hero_content-hero">
+
+                <button id="btn_nuevo_2026" class="btn">NUEVO TEMPORADA 2026</button>
+
+
+
+                <h1>Tu portal definitivo <span>al universo anime</span></h1>
+                <p class="subtitle">Otaku TV reúne streaming premium, estrenos simultáneos con Japón y merchandising
+                    oficial en un solo lugar. Accede sin límites y colecciona lo que amas.</p>
+            </div>
+
+        </section>
+
+        <!-- ==========================================================================
+           SECCIÓN 2: CONTROL DE ACCESO (LOGIN)
+           ========================================================================== -->
+        <section class="login_seccion">
+            <div class="card login_card">
+                <h2>Control de Acceso</h2>
+                <p class="login_instrucciones">Introduce tus datos para personalizar tu experiencia y validar tu acceso.</p>
+                
+                <div class="form_group">
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" id="username" placeholder="Ej. Ricard">
+                </div>
+                
+                <div class="form_group">
+                    <label for="user_age">Edad:</label>
+                    <input type="number" id="user_age" placeholder="Ej. 18">
+                </div>
+                
+                <!-- Botón con el que interactuará el usuario -->
+                <button id="btn_login" class="btn-acceso">Validar Usuario</button>
+                
+                <!-- Párrafo vacío para modificar con innerHTML desde JavaScript -->
+                <p id="mensaje_login" class="mensaje_dinamico"></p>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           SECCIÓN 3: ANIMES PRINCIPALES Y RESEÑAS / CARRITO
+           ========================================================================== -->
+        <section class="animes_seccion">
+            <h2>Animes Principales & Merchandising</h2>
+            
+            <div class="grid_animes">
+                <!-- Tarjeta del Anime Destacado -->
+                <div class="card anime_card">
+                    <div class="anime_badge">Destacado</div>
+                    <h3>Chainsaw Man (Temporada 1)</h3>
+                    <p class="anime_desc">Un joven se fusiona con su perro demonio para sobrevivir en un mundo hostil.</p>
+                    
+                    <!-- Sistema de Reseñas / Votos -->
+                    <div class="reseñas_container">
+                        <button id="btn_like" class="btn_like">Me gusta 👍</button>
+                        <p>Votos positivos: <span id="contador_votos">150</span></p>
+                    </div>
+                    <!-- Párrafo para mostrar si es Obra Maestra -->
+                    <p id="mensaje_reseña" class="mensaje_exito"></p>
+                </div>
+
+                <!-- Tarjeta de Compra de Merchandising -->
+                <div class="card producto_card">
+                    <div class="anime_badge">Tienda</div>
+                    <h3>Figura Luffy Gear 5</h3>
+                    
+                    <!-- Datos numéricos preparados para operadores matemáticos -->
+                    <div class="precios_info">
+                        <p>Precio Base: <span id="precio_base">45</span>€</p>
+                        <p>Nueva Reserva: +<span id="coste_reserva">5</span>€</p>
+                        <p>Descuento Especial: -<span id="descuento_promo">10</span>€</p>
+                        <p>Gastos de Envío: +<span id="gastos_envio">4</span>€</p>
+                    </div>
+
+                    <button id="btn_carrito" class="btn">Añadir al Carrito</button>
+                    
+                    <!-- Resumen del Carrito integrado en la tarjeta -->
+                    <div class="resumen_carrito">
+                        <p>Artículos: <span id="cantidad_articulos">0</span></p>
+                        <h4>Total a Pagar: <span id="total_pago">0</span>€</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Enlace al futuro JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+header {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    background-color: #000000;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.user_status {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.btn-estado {
+
+
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 7px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-transform: uppercase;
+    border: none;
+}
+
+.btn-acceso {
+    background-color: orange;
+    color: #000000;
+    border: orange 1px solid;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+span {
+    color: #ff6600;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+.hero_seccion {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 40px;
+    border:1px solid #333;
+        overflow: hidden;
+
+    
+}
+
+.hero_nueva_temporada-img {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.6;
+    height:auto;
+}
+
+.hero_content-hero {
+    position: relative;
+    z-index: 2;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.btn {
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+    background-color: #ffa500;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.hero_content-hero h1 {
+    margin-top: 50px;
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bolder;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.subtitle {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.login_seccion {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.login_card {
+    background-color: #141519;
+    border: 1px solid #333;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.login_card h2 {
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.login_instrucciones {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    margin-bottom: 20px;
+}
+
+.form_group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form_group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+}
+
+.form_group input {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+}
+
+.form_group input:focus {
+    outline: none;
+    border-color: #ff6600;
+}
+
+/* Estilos para la sección de Animes y Grid */
+.animes_seccion {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.animes_seccion > h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-left: 4px solid #ff6600;
+    padding-left: 10px;
+}
+
+.grid_animes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.anime_badge {
+    background-color: #ff6600;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.anime_desc, .precios_info {
+    color: #b3b3b3;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Contenedores internos de interacción */
+.reseñas_container, .resumen_carrito {
+    background-color: #000;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #222;
+}
+
+.btn_like {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn_like:hover {
+    background-color: #444;
+}
+
+.precios_info p {
+    margin-bottom: 5px;
+}
+
+.resumen_carrito h4 {
+    color: #ff6600;
+    font-size: 1.1rem;
+}
+
+/* Clases que usaremos con JavaScript para mensajes */
+.mensaje_dinamico {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.mensaje_exito {
+    color: #2ed573;
+    margin-top: 10px;
+    font-weight: bold;
+}
